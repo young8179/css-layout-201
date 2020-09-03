@@ -1,0 +1,38 @@
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+.chessboard {
+  height: 100vw;
+}
+
+.row {
+  display: flex;
+  height: 12.5%;
+}
+
+.row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.tile {
+  background-color: chartreuse;
+  height: 20px;
+  width: 12.5%;
+  height: 100%;
+}
+
+.tile:nth-child(even) {
+  background-color: #aaa;
+}
+
+/* 
+.row:nth-child(even) .tile:nth-child(odd) {
+  background-color: #aaa;
+}
+
+.row:nth-child(even) .tile:nth-child(even) {
+  background-color: #ccc;
+}
+*/
